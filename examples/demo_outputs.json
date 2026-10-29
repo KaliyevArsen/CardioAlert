@@ -1,0 +1,31 @@
+{
+  "provenance": "Newly executed fictional demonstrations, not patient records or historical pilot observations.",
+  "model_experiment": "cleveland",
+  "examples": [
+    {
+      "input_file": "fictional_complete.json",
+      "result": {
+        "model_score": 0.21660909056663513,
+        "threshold": 0.5,
+        "classification_at_threshold": 0,
+        "missing_features_imputed": [],
+        "experiment": "cleveland",
+        "disclaimer": "Educational research prototype. This model score is not a diagnosis or a validated personal probability of future disease. Do not use it to make treatment decisions; consult a qualified clinician for health concerns."
+      }
+    },
+    {
+      "input_file": "fictional_missing.json",
+      "result": {
+        "model_score": 0.7503527998924255,
+        "threshold": 0.5,
+        "classification_at_threshold": 1,
+        "missing_features_imputed": [
+          "chol",
+          "ca"
+        ],
+        "experiment": "cleveland",
+        "disclaimer": "Educational research prototype. This model score is not a diagnosis or a validated personal probability of future disease. Do not use it to make treatment decisions; consult a qualified clinician for health concerns."
+      }
+    }
+  ]
+}
